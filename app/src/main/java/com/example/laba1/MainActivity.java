@@ -4,6 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * Описание класса
+ * @author Лацигин Максим
+ * @version 1.0
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,21 +18,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Функцция определяет максимум
+     * @param a
+     * @param b
+     * @return
+     */
     int Max(int a, int b){
-        if (a>b){
+        if (a>=b){
             return a;
-        }else if(a<b){
-            return b;
         }else
-            return a;
+            return b;
     }
 
+    /**
+     * Функция определяет минимум
+     * @param a
+     * @param b
+     * @return
+     */
     int Min(int a, int b){
-        if (a<b){
+        if (a<=b){
             return a;
-        }else if(a>b){
-            return b;
         }else
-            return a;
+            return b;
     }
 }
